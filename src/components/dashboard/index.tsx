@@ -52,7 +52,7 @@ export const Dashboard = () => {
 
     React.useEffect(() => {
     setLayout(loadLayout())
-    alert(CODE_WORD);
+    console.log(CODE_WORD);
     }, [])
 
     const confirmEdit = (layout: any) => {

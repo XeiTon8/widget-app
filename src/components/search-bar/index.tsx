@@ -26,8 +26,6 @@ export const SearchBar: React.FC<ISearchBarProps> = ({isFullWidth}) => {
             </svg>
             </div>
             </span>
-          
-            
         </div>
     </div>
     )
