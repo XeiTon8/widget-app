@@ -13,7 +13,7 @@ layout: Layout;
 setLayout: (val: any) => void;
 }
 
-export const EditPanel: React.FC<EditPanelProps> = ({widgets, setWidgets, isEdit, setIsEdit, layout, setLayout}) => {
+export const EditPanel: React.FC<EditPanelProps> = ({widgets, setWidgets, isEdit, setIsEdit, setLayout}) => {
 
     const [availableWidgets, setAvailableWidgets] = React.useState<IWidget[]>([
         {id: 1, name: "Open tasks", added: false},
