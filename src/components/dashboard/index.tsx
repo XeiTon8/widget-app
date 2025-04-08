@@ -21,6 +21,9 @@ export interface IWidget {
 }
 
 export const Dashboard = () => {
+
+    const CODE_WORD = "LIQN";
+
     const [widgets, setWidgets]  = React.useState<IRenderedWidget[]>([]);
     const [isEdit, setIsEdit] = React.useState(false);
     const [layout, setLayout] = React.useState<any>();
@@ -49,6 +52,7 @@ export const Dashboard = () => {
 
     React.useEffect(() => {
     setLayout(loadLayout())
+    alert(CODE_WORD);
     }, [])
 
     const confirmEdit = (layout: any) => {
