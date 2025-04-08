@@ -6,7 +6,7 @@ import { Dashboard } from './components/dashboard';
 function App() {
 
   return (
-   <Router>
+   <Router  basename='/widget-app'>
     <Routes>
       <Route path='/' element={<Dashboard />} />
     </Routes>
