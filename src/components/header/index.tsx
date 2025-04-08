@@ -45,10 +45,10 @@ export const Header = () => {
                     </div>
 
                 {dropdownOpen && (
-                <div className="absolute left-0 right-0 mt-2 bg-white border border-gray-300 rounded-[10px] shadow-lg">
+                <div className="absolute left-0 right-0 mt-2 bg-white border border-gray-300 rounded-[10px] shadow-lg z-100">
                     <div
                         onClick={() => handleSelect(UKFlag)}
-                        className="flex items-center justify-center p-2 cursor-pointer hover:bg-gray-100"
+                        className="flex items-center justify-center p-2 cursor-pointer hover:bg-gray-100 z-100"
                     >
                         <img
                         src={UKFlag}
@@ -59,7 +59,7 @@ export const Header = () => {
                     </div>
                     <div
                         onClick={() => handleSelect(GERFlag)}
-                        className="flex items-center justify-center p-2 cursor-pointer hover:bg-gray-100"
+                        className="flex items-center justify-center p-2 cursor-pointer hover:bg-gray-100 z-100"
                     >
                         <img
                         src={GERFlag}
